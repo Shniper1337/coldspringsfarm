@@ -1,0 +1,193 @@
+header {
+	margin: auto;
+	text-align: center;
+}
+header img {
+	width: 1200px;
+	height: 350px;
+	margin: auto;
+	margin-left: -10px;
+}
+
+#container {
+	width: 1180px;
+	height: 320px;
+	margin: auto;
+	background-color: #569762;
+}
+
+header li {
+	display: inline;
+	font-size: 21px;
+	color: #ddd;
+	text-shadow: 1px 1px 1px #000;
+}
+
+header li:hover {
+	color: #fff;
+	text-shadow: 1px 1px 1px #000,
+					   0px 0px 50px #000,
+					   0px 0px 25px #000,
+					   0px 0px 75px #111;
+}
+
+header li:not(first-of-type) {
+	margin-left: 30px;
+}
+
+header ul{
+	margin-top: -80px;
+	margin-left: 100px;
+}
+
+*, main *, header *, footer *, #wrap * {
+	text-decoration: none;
+	list-style-type: none;
+}
+
+*:hover, main *:hover, header *:hover, footer *:hover, #wrap *:hover {
+	text-decoration: none;
+	list-style-type: none;
+}
+
+main {
+	background-color: #569762;
+	width: 1180px;
+	height: 700px;
+	margin: auto;
+	margin-top: -20px;
+}
+
+.news {
+	width: 500px;
+	margin-left: 45px;
+	position :relative;
+}
+
+.news h1 {
+	padding-top: 80px;
+	margin: auto;
+	text-align: center;
+	color: #06682E;
+	text-shadow: 1px 1px 1px #000;
+}
+
+.news p {
+	margin: auto;
+	text-align: center;
+	margin-top: 20px;
+	max-width: 450px;
+	color: #000;
+}
+
+.news a {
+	color: #A9E016;
+	cursor: pointer;
+	z-index: 1;
+	position: relative;
+}
+
+.news .link {
+	margin-top: 5px;
+}
+
+.news a:hover {
+	text-decoration: none;
+	color: #62E51B;
+	text-shadow: 0px 0px 20px #000;
+}
+
+.carousel{
+  width:100%;
+  position :relative;
+  overflow:hidden;
+  border-radius: 10px;
+}
+
+.panes{
+    list-style:none;
+	margin: 0;
+	padding: 0;
+    position:relative;
+    width:500%; /* Number of panes * 100% */
+    overflow:hidden; /* This is used solely to clear floats, it does not add functionality. */
+    -moz-animation:carousel 30s infinite;
+    -webkit-animation:carousel 30s infinite;
+    animation:carousel 30s infinite;
+	border-radius: 10px;
+}
+
+.panes > li{
+    position:relative;
+    float:left;
+    width:20%; /* 100 / number of panes */
+}
+
+.carousel img{
+    display:block;
+    width: 400px;
+    max-width:400px;
+	border-radius: 10px;
+}
+
+.carousel h2{
+    font-size:1em;
+    padding:0.5em;
+    position:absolute;
+    right:10px;
+    bottom:10px;
+    left:10px;
+    text-align:left;
+    color:#fff;
+    background-color:rgba(0,0,0,0.5);
+}
+
+.panes{
+  width: 500%;
+  position: relative;
+}
+
+.slide {
+	width: 400px;
+	position :relative;
+	float: right;
+	margin-top: -400px;
+	margin-right: 100px;
+	box-shadow: 0px 0px 100px 0px rgba(0, 0, 0, .5),
+							0px 0px 20px 0px #000,
+							2px 2px 2px 0px #000;
+	border-radius: 10px;
+}
+
+@keyframes carousel{
+    0%    { left:0; }
+    11%   { left:0; }
+    12.5% { left:-100%; }
+    23.5% { left:-100%; }
+    25%   { left:-200%; }
+    36%   { left:-200%; }
+    37.5% { left:-300%; }
+    48.5% { left:-300%; }
+    50%   { left:-400%; }
+    61%   { left:-400%; }
+    62.5% { left:-300%; }
+    73.5% { left:-300%; }
+    75%   { left:-200%; }
+    86%   { left:-200%; }
+    87.5% { left:-100%; }
+    98.5% { left:-100%; }
+    100%  { left:0; }
+}
+
+footer {
+	margin: auto;
+	text-align: center;
+}
+
+footer img {
+	width: 1200px;
+	height: 350px;
+	margin: auto;
+	margin-top: -300px;
+	margin-left: 19px;
+}
