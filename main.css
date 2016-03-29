@@ -26,9 +26,9 @@ header li {
 header li:hover {
 	color: #fff;
 	text-shadow: 1px 1px 1px #000,
-					   0px 0px 20px #000,
-					   0px 0px 10px #000,
-					   0px 0px 30px #111;
+					   0px 0px 8px #000,
+					   0px 0px 4px #000,
+					   0px 0px 15px #111;
 }
 
 header li:not(first-of-type) {
